@@ -13,8 +13,8 @@ int print_address(va_list a)
 	p = va_arg(a, unsigned long int);
 	if (p == 0)
 	{
-		write(1, "(null)", 6);
-		return (6);
+		write(1, "(nil)", 5);
+		return (5);
 	}
 	write(1, "0", 1);
 	write(1, "x", 1);
