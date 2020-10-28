@@ -33,6 +33,9 @@ int print_number(va_list a);
 /*Writes decimal to binary*/
 int print_binary(va_list a);
 
+/*Writes characters to stdout*/
+int _putchar(char c);
+
 /*Writes a string in reverse*/
 int print_rev(va_list a);
 
@@ -56,6 +59,9 @@ int print_address(va_list a);
 
 /*Writes unsigned long int numbers to hexa in lowercase*/
 int print_hexa(unsigned long int a);
+
+/*Writes unsigned long int numbers to hexa in uppercase*/
+int print_hexb(unsigned long int a);
 
 /*Changes non printable characters to stdout*/
 int print_ascii(va_list a);
