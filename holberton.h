@@ -33,9 +33,6 @@ int print_number(va_list a);
 /*Writes decimal to binary*/
 int print_binary(va_list a);
 
-/*Writes characters to stdout*/
-int _putchar(char c);
-
 /*Writes a string in reverse*/
 int print_rev(va_list a);
 
