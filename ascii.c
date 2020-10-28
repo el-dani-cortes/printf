@@ -39,7 +39,7 @@ int print_ascii(va_list a)
 }
 
 /**
- * print_hexau - unsigned long int argument is converted to hexa in uppercase
+ * print_hexb - unsigned long int argument is converted to hexa in uppercase
  * @a: pointer to arguments
  * Return: number of digits printed
  */
