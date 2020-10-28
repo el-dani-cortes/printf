@@ -1,0 +1,54 @@
+.TH _printf 1 "27 October 2020" "0.1" "_printf man page"
+.SH NAME
+.B _printf - format data and print output into stdout
+.SH SYNOPSIS
+.IP
+.I #include "holberton.h"
+.IP
+.I int _printf(const char *format, ...);
+.IP
+.I _printf [FORMAT][ARGUMENT]...
+
+.SH DESCRIPTION
+
+Inside _printf() there are additional functions to produce output according to the format specifiers provided below. Each argument passed into _printf is written to stdout, the standard output stream. The format controls the output of _printf.
+
+.SH RETURN VALUE
+Upon success, _printf will return the amount of characters printed(excluding the null byte used to end output to strings). It will return an exit status of -1 upon failure.
+
+.SH FORMAT OF FUNCTION
+The format of _printf is a character string and can include zero or more format specifiers, each matching zero or more arguments being passed in. Each format specifier starts with the char "%" followed by the specific format specifier such as: "%c". By default, arguments passed in must follow the order of the each format specifier. For example:
+.IP
+.B _printf("This is a %s of %d", "string", 5);
+.IP
+.B $ "This is a string of 5"
+.SH FORMAT SPECIFIERS
+.IP s
+The specifier '%' is received as a string in the function print_string. Characters are written to stdout excluding the null byte.
+.IP c
+The specifier "%c" is of type int. which is then converted to an unsigned char, which is then written.
+.IP %
+The argument passed is not converted and will simply be written as "%". To write out "%", format must be "%%".
+.IP d, i
+The argument passed for specifiers "%d" and "%i" is an int argument converted into signed decimal notation. In _printf, the specifiers are handled the same way. The precision functionality, the number of digits that appears in beginning, is still in development and will be added at an later time.
+.IP r
+The argument passed for specifier "%r" has the same conversion functionality as "%s", but writes the output into the buffer in reverse order.
+.IP R
+The argument passed for specifier "%R" converts the argument from a string literal into rot13.
+.IP o, u, x, X
+The argument passed for specifiers "%o", "%u", "%x", and "%X" are handled as follows:
+.IP
+"%o" takes in an unsigned integer and converts the argument into an unsigned octal.
+.IP
+"%u" takes in an unsigned integer and converts the argument into an unsigned decimal
+.IP
+"%x","%X" takes in an unsiged integer and converts the argument into an unsigned hexadecimal. For "x", letters "abcdef" are used while for "X", letters "ABCDEF" are used.
+.IP p
+The void * pointer argument is printed in hexadecimal
+
+.SH BUGS
+No known bugs.
+.SH DEVELOPER(s) NOTES
+This _printf function currently does not support special flags [+ , - , `, \0 , #], field, width or precision. Under development.
+.SH AUTHORS
+Daniel Cortes, Andres Lopez
