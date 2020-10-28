@@ -21,6 +21,7 @@ int (*get_op_func(char s))(va_list)
 		{'x', print_lowerhexa},
 		{'X', print_upperhexa},
 		{'p', print_address},
+		{'S', print_ascii},
 		{'\0', '\0'}
 	};
 	unsigned int j;
