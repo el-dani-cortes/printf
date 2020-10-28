@@ -57,4 +57,7 @@ int print_address(va_list a);
 /*Writes unsigned long int numbers to hexa in lowercase*/
 int print_hexa(unsigned long int a);
 
+/*Changes non printable characters to stdout*/
+int print_ascii(va_list a);
+
 #endif /*FILE_H*/
