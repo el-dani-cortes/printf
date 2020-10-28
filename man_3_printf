@@ -1,4 +1,4 @@
-.TH _printf 1 "27 October 2020" "0.1" "_printf man page"
+.TH _printf 3 "27 October 2020" "0.1" "_printf man page"
 .SH NAME
 .B _printf - format data and print output into stdout
 .SH SYNOPSIS
