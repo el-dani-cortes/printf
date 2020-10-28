@@ -55,7 +55,7 @@ Done and tested with VirtualBox on Ubuntu via Vagrant(2.2.10)
 - [X] Handles conversion specifier b.
 - [X] Handles conversion specifiers u, o, x, X.
 - [ ] Uses a local buffer of 1024 chars in order to call write as little as possible.
-- [ ] Handles conversion specifier S.
+- [X] Handles conversion specifier S.
 - [X] Handles conversion specifier p.
 - [ ] Handles flag characters +, space, and # for non-custom conversion specifiers.
 - [ ] Handles length modifiers l and h for non-custom conversion specifiers.
